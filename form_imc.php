@@ -3,6 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <title>Formulário de IMC</title>
+    <style>
+ body{
+  font-family: Arial, sans-serif;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 1px;
+ }
+
+ h1{
+  font-size: 3.5em;
+  margin-bottom: 0.5em;
+ }
+
+ p{
+  font-size: 1.2em;
+  margin-bottom: 1em;
+ }
+
+ ul{
+  list-style-type: none;
+  padding: 0;
+ }
+
+ li{
+  margin-bottom: 0.5em;
+ }
+
+ label{
+  display: block;
+  margin-bottom: 0.5em;
+ }
+
+input[type="number"]{
+  width: 10%;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+ }
+
+ input[type="submit"]{
+  background-color: #0066cc;
+  border: none;
+  color: white;
+  padding: 0.7em;
+  margin-bottom: 1.7em;
+  cursor: pointer;
+ }
+
+ input[type="submit"]:hover{
+  background-color: #333;
+ }
+ </style>
+
 </head>
 <body>
     <h1>Formulário de IMC</h1>
@@ -35,12 +87,12 @@
         ?>
         <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
             <label for="peso">Peso (em kg):</label>
-            <input type="text" id="peso" name="peso" required><br>
+            <input type="number" id="peso" name="peso" required><br>
             
             <label for="altura">Altura (em m):</label>
-            <input type="text" id="altura" name="altura" required><br>
+            <input type="number" id="altura" name="altura" required><br>
             
-            <input type="submit" value="Calcular IMC">
+            <input type="submit" class="btn btn-outline-primary" value="Calcular IMC">
         </form>
         <?php
     }
