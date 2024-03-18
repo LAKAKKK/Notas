@@ -3,5 +3,5 @@
 
 ## Nomes Do Grupo:
 
-- Cauã Pacheco
-- Lara 
+- Cauã Pacheco de Paula
+- Lara da Fonseca Silva
